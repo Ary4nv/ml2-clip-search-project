@@ -48,7 +48,8 @@ def get_text_embedding(text):
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
     with torch.no_grad():
-        features = model.get_text_features(**inputs)
+        outputs = model.get_text_features(**inputs)
+        features = outputs.pooler_output
 
     features = features / torch.norm(features, dim=-1, keepdim=True)
     return features.cpu().numpy().astype("float32")
