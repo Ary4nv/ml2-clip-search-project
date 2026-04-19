@@ -198,6 +198,8 @@ ML2_final/
 
 🎥 Video Demonstration
 
+[![Watch the video](https://img.youtube.com/vi/K_sgt1A_INU/0.jpg)](https://youtu.be/K_sgt1A_INU)
+
 ⸻
 
 🧾 Design Decisions
