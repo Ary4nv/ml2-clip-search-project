@@ -161,6 +161,7 @@ ML2_final/
 │ ├── image_embeddings.npy # Cached embeddings
 │ ├── image_paths.pkl # Paths aligned with embeddings
 │ └── faiss_index.bin # FAISS index
+├── Screenshots # UI screenshots
 └── README.md
 
 ⸻
@@ -186,6 +187,7 @@ ML2_final/
 ⸻
 
 📸 Screenshots
+
 ![Alt text](/Screenshots/image1.png)
 ![Alt text](/Screenshots/image2.png)
 ![Alt text](/Screenshots/image3.png)
