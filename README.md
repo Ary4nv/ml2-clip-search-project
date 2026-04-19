@@ -133,7 +133,6 @@ Gradio UI Display
 3. Run all cells
 4. Run:
 
-```bash
 !python app.py
 
 5. Click the Gradio public link
@@ -155,62 +154,60 @@ python app.py
 📂 Project Structure
 
 ML2_final/
-├── app.py                      # Gradio UI application
-├── clip_faiss_search.ipynb     # Builds dataset + embeddings + FAISS index
+├── app.py # Gradio UI application
+├── clip_faiss_search.ipynb # Builds dataset + embeddings + FAISS index
 ├── project_data/
-│   ├── images/                 # CIFAR-10 images
-│   ├── image_embeddings.npy    # Cached embeddings
-│   ├── image_paths.pkl         # Paths aligned with embeddings
-│   └── faiss_index.bin         # FAISS index
+│ ├── images/ # CIFAR-10 images
+│ ├── image_embeddings.npy # Cached embeddings
+│ ├── image_paths.pkl # Paths aligned with embeddings
+│ └── faiss_index.bin # FAISS index
 └── README.md
 
 ⸻
 
 🖼️ Application Features
 
-* Text-to-image search using natural language
-* Top-k nearest neighbor retrieval
-* Similarity scores displayed
-* Interactive UI via Gradio
-* Example queries for quick testing
+- Text-to-image search using natural language
+- Top-k nearest neighbor retrieval
+- Similarity scores displayed
+- Interactive UI via Gradio
+- Example queries for quick testing
 
 ⸻
 
 🔍 Example Queries
 
-* a red car
-* dog on grass
-* a ship on the ocean
-* small airplane in the sky
-* horse in a field
+- a red car
+- dog on grass
+- a ship on the ocean
+- small airplane in the sky
+- horse in a field
 
 ⸻
 
 📸 Screenshots
 
-
 ⸻
 
 🎥 Video Demonstration
-
 
 ⸻
 
 🧾 Design Decisions
 
-* FAISS IndexFlatIP used for exact search (efficient for small datasets)
-* L2 normalization ensures cosine similarity
-* 512-dimensional embeddings from CLIP
-* Text caching added for faster repeated queries
+- FAISS IndexFlatIP used for exact search (efficient for small datasets)
+- L2 normalization ensures cosine similarity
+- 512-dimensional embeddings from CLIP
+- Text caching added for faster repeated queries
 
 ⸻
 
 ⚠️ Limitations
 
-* CIFAR-10 images are low resolution (32×32)
-* No fine-tuning of CLIP model
-* Exact search does not scale to very large datasets
-* No advanced ranking or reranking
+- CIFAR-10 images are low resolution (32×32)
+- No fine-tuning of CLIP model
+- Exact search does not scale to very large datasets
+- No advanced ranking or reranking
 
 ⸻
 
@@ -219,4 +216,7 @@ ML2_final/
 This project demonstrates how pretrained neural networks can be integrated into a full AI system. By combining CLIP embeddings with FAISS, we achieve efficient and scalable semantic image retrieval.
 
 ⸻
+
+```
+
 ```
