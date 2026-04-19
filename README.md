@@ -7,11 +7,11 @@
 
 ## 👥 Team Members
 
-| Name        | Student ID | Email                       |
-| ----------- | ---------- | --------------------------- |
-| Arian Vares | 100882708  | Arian.vares@ontariotechu.ca |
-| Member 2    | XXXXXXXX   | email2@ontariotechu.ca      |
-| Member 3    | XXXXXXXX   | email3@ontariotechu.ca      |
+| Name         | Student ID | Email                        |
+| -------------| -----------| -----------------------------|
+| Arian Vares  | 100882708  | Arian.vares@ontariotechu.ca  |
+| Eshan Salwan | 100995944  | Eshan.salwan@ontariotechu.ca |
+| Member 3     | XXXXXXXX   | email3@ontariotechu.ca       |
 
 ---
 
@@ -186,6 +186,11 @@ ML2_final/
 ⸻
 
 📸 Screenshots
+![Alt text](ml2-clip-search-project/Screenshots/image1.png)
+![Alt text](ml2-clip-search-project/Screenshots/image2.png)
+![Alt text](ml2-clip-search-project/Screenshots/image3.png)
+
+
 
 ⸻
 
