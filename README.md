@@ -186,9 +186,9 @@ ML2_final/
 ⸻
 
 📸 Screenshots
-![Alt text](ml2-clip-search-project/Screenshots/image1.png)
-![Alt text](ml2-clip-search-project/Screenshots/image2.png)
-![Alt text](ml2-clip-search-project/Screenshots/image3.png)
+![Alt text](/Screenshots/image1.png)
+![Alt text](/Screenshots/image2.png)
+![Alt text](/Screenshots/image3.png)
 
 
 
