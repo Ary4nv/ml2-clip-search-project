@@ -11,7 +11,7 @@
 | -------------| -----------| -----------------------------|
 | Arian Vares  | 100882708  | Arian.vares@ontariotechu.ca  |
 | Eshan Salwan | 100995944  | Eshan.salwan@ontariotechu.ca |
-| Member 3     | XXXXXXXX   | email3@ontariotechu.ca       |
+| Kailash Subash Nair   | 100932798   | kailash.subash@ontariotechu.net     |
 
 ---
 
