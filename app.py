@@ -42,17 +42,22 @@ else:
         "Run clip_faiss_search.ipynb first to build cached artifacts."
     )
 
-
+text_cache = {}
 def get_text_embedding(text):
+    if text in text_cache:
+        return text_cache[text]
+
     inputs = processor(text=[text], return_tensors="pt", padding=True)
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
     with torch.no_grad():
-        outputs = model.get_text_features(**inputs)
-        features = outputs.pooler_output
+        features = model.get_text_features(**inputs)
 
     features = features / torch.norm(features, dim=-1, keepdim=True)
-    return features.cpu().numpy().astype("float32")
+    features = features.cpu().numpy().astype("float32")
+
+    text_cache[text] = features
+    return features
 
 
 def search(query, k=5):
@@ -65,7 +70,8 @@ def gradio_search(query, k):
     if not query or not query.strip():
         return []
     results = search(query, int(k))
-    return [(path, f"score: {score:.4f}") for path, score in results]
+    from PIL import Image
+    return [(Image.open(path), f"score: {score:.4f}") for path, score in results]
 
 
 with gr.Blocks(title="CLIP + FAISS Image Search") as demo:
@@ -87,4 +93,4 @@ with gr.Blocks(title="CLIP + FAISS Image Search") as demo:
 
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
